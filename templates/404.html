@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="robots" content="index, follow" /> 
+    <meta name="title" content="Manga Verde - Compra Coletiva , Leilão Online, Loja Virtual - Brasil" /> 
+    <meta name="description" content="A Manga Verde é uma empresa jovem, ágil, que presa pela inovação dinâmica e constante no mercado de vendas, e oferece a seus clientes todo o potencial economico que o mercado virtual pode proporcionar. Por intermédio de ótimas promoções, nos adequamos não apenas a necessidade de nossos clientes mas também as condições que favoreçam sua plena satisfação, oferecendo a eles uma variedade enorme de possibilidades, trazendo diversão, cultura e conforto a todos.
+" /> 
+    <meta name="keywords" content="compra coletiva, coletivo,compras online, compras, barato coletivo, panfleteria, planfleteria, urbano, peixe, peixe urbano, fortaleza, ceará, manga, verde, mangaverde, leilão virtual, compra online, compra, fortaleza, ceará, ceara, ce, games, jogos, playstation 2, ps2, memoria, click, unico, lance, loja virtual, notebook, netbook, mouse, peças de informatica, peças de informática, venda, promoções, promocao, promoção, promoção fortaleza" /> 
+    <meta name="google-site-verification" content="Zwy6s0s5ZA8Ie2smwQ8lgqsvpmi0PeXwRe4LG8RVB38" />   
+
+	<title>Manga Verde - Compra Coletiva , Leilão Online, Loja Virtual, Tudo em um só lugar !</title>
+
+	<link rel="icon" href="{{MEDIA_URL}}img/favicon.png" type="image/png" />
+	<link rel="stylesheet" type="text/css" media="screen, projection" href="{{MEDIA_URL}}css/960/css/reset.css" />
+	<link rel="stylesheet" type="text/css" media="screen, projection" href="{{MEDIA_URL}}css/960/css/960.css" />
+	<link rel="stylesheet" type="text/css" media="screen, projection" href="{{MEDIA_URL}}css/960/css/text.css" />
+	<link rel="stylesheet" type="text/css" media="screen, projection" href="{{MEDIA_URL}}css/style.css" />
+<!--SCRIPTS-->
+
+	
+    <script type="text/javascript" src="{{MEDIA_URL}}js/jquery-1.4.3.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="{{MEDIA_URL}}js/jform.js"></script>
+    <script type="text/javascript" src="{{MEDIA_URL}}js/valida-newsletter.js" ></script>
+
+    <!--[if IE 6]>
+    <script type="text/javascript" language="javascript" src="{{MEDIA_URL}}js/DD_belatedPNG_0.0.7a-min.js"></script>
+    <script>
+        DD_belatedPNG.fix(' img , .arrow-left, .arrow-right');
+    </script>
+    <![endif]-->
+    <script type="text/javascript" language="javascript">
+        
+        $(document).ready(function(){		
+            $("#id-form-zero").bind("submit", function(){			
+                enviarEmail();
+                $("#id-form-zero").clearForm();
+                return false;
+            });            
+        });
+    </script>
+
+
+
+</head>
+<!-- Google Analitics -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-20901672-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<body>
+    <div class="waves">
+        <div class="zero container_12">
+            <div class="grid_12 alpha">
+                <img src="{{MEDIA_URL}}img/logo-manga-gigante.png" />
+                <h1><a class="logo" href="#">Manga Verde - Compra Coletiva , Leilão Online, Loja Virtual</a></h1>
+                <div class="area-util">
+                    <h2>Em breve uma inova&ccedil;&atilde;o incrível no mercado de vendas online!</h2><h2>Cadastre-se e receba nossas ofertas por email</h2>
+                    <form action="/cadastrar_newsletter/" method="POST" id="id-form-zero">
+                    	<fieldset>
+                        <img class="img" src="{{MEDIA_URL}}img/bg-input-left.png" />
+                        <input class="email" id="zero-email" type="text" name="email" onblur="if(this.value==''){this.value='Informe seu Email';}" onfocus="if(this.value=='Informe seu Email'){this.value='';}" value="Informe seu Email">
+                        <img class="img" src="{{MEDIA_URL}}img/bg-input-right.png" />
+                        </fieldset>                        
+						<input type="submit" title="Enviar Email" class="enviar" id="bt_enviar" value="" />                        
+                    </form>
+                    <p class="alertcontato" id="alertcontato" style="display:none;">&nbsp;{{form.email.errors}}</p>
+                </div>
+                <div class="zero-rodape"> 
+                	<p class="offer"><img src="{{MEDIA_URL}}img/ico-offer.png" /> Cadastre-se agora e siga-nos nas redes sociais para concorrer a 5 pacotes de 100 lances inteiramente gr&aacute;tis !</p>  
+                                  
+                    <p>
+                        <b>Siga nos nas Redes Sociais</b>
+                        <ul class="links zero-redes-rodape">
+                            <li><a class="twitter" target="_blank" title="twitter" href="http://twitter.com/mangavendas">twitter</a></li>
+                            <li><a class="orkut" target="_blank" title="orkut" href="http://www.orkut.com.br/Main#Profile?uid=16526242655727988038">orkut</a></li>
+                            <li><a class="facebook" target="_blank" title="facebook" href="http://www.facebook.com/profile.php?id=100001987095571">facebook</a></li>
+                        </ul>
+                    </p>
+                    <p class="msg"><img class="ico" src="{{MEDIA_URL}}img/favicon.png" /> mangaverde.com.br<br/>&copy; 2010 - todos os direitos reservados</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
