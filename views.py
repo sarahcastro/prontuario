@@ -8,15 +8,22 @@ from django.core.files.uploadedfile import SimpleUploadedFile
 from django.core.files import File
 
 
-from prontuario.modulos.pacientes.forms import FormPaciente
-from prontuario.modulos.pacientes.models import Pacientes
+from modulos.pacientes.forms import FormPaciente
+from modulos.pacientes.models import Paciente
+
+from django.contrib.auth.decorators import login_required
 
 def index_view(request):
+    form = FormPaciente()
     return render_to_response(
         'index.html',
-        {'oferta_destaque':oferta_destaque,
-         'ofertas':ofertas},
+        locals(),
         context_instance=RequestContext(request),)
+
+@login_required(login_url='/accounts/login/')
+def infopaciente(request):
+    pacientes = Paciente.objects.all()
+    return render(request, 'pacientes.html', locals())
 
 def login_view(request):
     return render_to_response(

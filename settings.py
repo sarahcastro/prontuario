@@ -34,6 +34,11 @@ GRAPPELLI_ADMIN_TITLE = "Prontuario Online"
 # Application definition
 
 INSTALLED_APPS = [
+    #'admin_tools',
+    #'admin_tools.theming',
+    #'admin_tools.menu',
+    #'admin_tools.dashboard',
+
     'grappelli',
     'bootstrap3',
     'django.contrib.admin',
@@ -63,8 +68,8 @@ ROOT_URLCONF = 'urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR,'prontuario/templates/'),],
-        'APP_DIRS': False,
+        'DIRS': [os.path.join(BASE_DIR,'prontuario/templates/'),"/django/contrib/admin/templates",],
+        'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
@@ -81,9 +86,6 @@ WSGI_APPLICATION = 'wsgi.application'
 PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(PROJECT_ROOT, 'static')
-
-# Database
-# https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 
 
 DATABASES = {

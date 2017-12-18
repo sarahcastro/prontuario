@@ -1,0 +1,164 @@
+<html lang="en-us"><head>
+    <title>Log in | Prontuario Online</title>
+    <meta charset="utf-8">
+    <meta name="robots" content="NONE,NOARCHIVE">
+    <!-- STYLESHEETS -->
+
+        <link href="/static/grappelli/jquery/ui/jquery-ui.min.css" rel="stylesheet" type="text/css" media="screen">
+        <link href="/static/grappelli/stylesheets/screen.css" rel="stylesheet" type="text/css" media="all">
+
+            <link href="/static/grappelli/stylesheets/mueller/grid/output.css" rel="stylesheet" type="text/css" media="screen">
+
+
+    <!-- EXTRASTYLES -->
+
+    <!-- JAVASCRIPTS -->
+
+        <script type="text/javascript">window.__admin_media_prefix__ = "/static/grappelli/";</script>
+        <script type="text/javascript">window.__admin_utc_offset__ = "0";</script>
+        <script type="text/javascript" charset="utf-8">
+            // GLOBALS
+            var grappelli = {},
+                ADMIN_URL = "/admin/",
+                MODEL_URL_ARRAY = [],
+                DATE_FORMAT = "%Y-%m-%d",
+                TIME_FORMAT = "%H:%M:%S",
+                DATETIME_FORMAT = "%Y-%m-%d %H:%M:%S";
+        </script>
+        <!-- jQuery, jQuery-UI -->
+        <script src="/static/grappelli/jquery/jquery.min.js" type="text/javascript"></script>
+        <script src="/static/grappelli/jquery/ui/jquery-ui.min.js" type="text/javascript"></script>
+
+            <!-- Grappelli Minified -->
+            <script src="/static/grappelli/js/grappelli.min.js" type="text/javascript"></script>
+
+        <script type="text/javascript" charset="utf-8">
+            (function($) {
+                $(document).ready(function() {
+                    $("#grp-navigation .grp-collapse").grp_collapsible();
+                });
+            })(grp.jQuery);
+        </script>
+
+    <!-- EXTRAHEAD -->
+
+
+    <script type="text/javascript">
+        (function($) {
+            $(window).load(function(){ $('#id_username').focus(); });
+        })(grp.jQuery);
+    </script>
+
+</head>
+<body class="grp-login">
+    <div id="container" class="grp-container">
+
+
+            <!-- HEADER -->
+            <header id="grp-header" class="">
+
+
+
+                        <!-- NAVIGATION -->
+                        <div id="grp-navigation">
+
+
+
+
+                            <h1 id="grp-admin-title">Prontuario Online</h1>
+
+
+
+                            <!-- Nav-Global -->
+
+                        </div>
+
+
+
+                        <!-- CONTEXT NAVIGATION -->
+                        <div id="grp-context-navigation">
+                            <nav id="grp-breadcrumbs" class="">
+                                <header style="display:none"><h1>Breadcrumbs</h1></header>
+
+                                    <ul>
+                                        <li><a href="/admin/">Home</a></li>
+
+                                            <li> › Log in</li>
+
+                                    </ul>
+
+                            </nav>
+                            <nav id="grp-page-tools">
+                                <header style="display:none"><h1>Page Tools</h1></header>
+
+                            </nav>
+                        </div>
+
+
+
+            </header>
+
+
+        <!-- CONTENT -->
+        <article id="grp-content" class="">
+
+            <!-- MESSAGES -->
+
+
+
+
+            <!-- CONTENT TITLE -->
+            <header id="grp-content-title">
+
+                <h1>Log in</h1>
+
+            </header>
+
+            <!-- CONTENT-CONTAINER -->
+            <div id="grp-content-container">
+
+    <div class="g-d-c g-d-10 g-centered">
+        <form action="/infopaciente" method="post" novalidate="">{% csrf_token %}
+            <fieldset class="grp-module grp-module-login">
+                <h1>
+                    <span class="grp-admin-title">Prontuario Online</span>
+                    <span class="grp-current-page">Log in</span>
+                </h1>
+                <div class="module grp-module">
+
+
+
+                    <div class="form-row grp-row">
+                        <label for="id_username" class="required">Username</label>
+                        <input type="text" name="username" id="id_username">
+
+                    </div>
+                    <div class="form-row grp-row grp-connected">
+                        <label for="id_password" class="required">Password</label>
+                        <input type="password" name="password" id="id_password">
+                        <input type="hidden" name="next" value="/admin/">
+
+                    </div>
+
+
+                </div>
+            </fieldset>
+            <div class="grp-module grp-submit-row">
+                <ul>
+                    <li><input type="submit" class="grp-button grp-default" value="Log in"></li>
+                </ul>
+            </div>
+        </form>
+    </div>
+
+            </div>
+
+        </article>
+
+        <!-- FOOTER -->
+
+
+    </div>
+
+
+</body><object id="da58dbf8-cbc9-8086-a838-9b8798a1a3bb" width="0" height="0" type="application/gas-events-cef"></object></html>

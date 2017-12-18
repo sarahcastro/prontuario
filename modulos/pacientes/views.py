@@ -7,10 +7,16 @@ from django import forms
 from django.core.files.uploadedfile import SimpleUploadedFile
 from django.core.files import File
 
+from django.contrib.auth.decorators import login_required
+
 
 from forms import FormPaciente
 from models import Paciente
 
-def index_view(request):
-    form = FormPaciente()
-    return render(request, 'index.html', locals())
+def login(request):
+    return render(request, 'login.html', {})
+
+@login_required
+def infopaciente(request):
+    pacientes = Paciente.objects.all()
+    return render(request, 'pacientes.html', locals())
